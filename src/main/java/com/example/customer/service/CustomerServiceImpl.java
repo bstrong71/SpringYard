@@ -22,7 +22,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer getById(int id) {
-        return customerRepository.getById();
+        return customerRepository.getById(id);
     }
 
     @Override
@@ -38,7 +38,5 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Transactional
     @Override
-    public void delete(int id) {
-        customerRepository.update();
-    }
+    public void delete(int id) { customerRepository.update(getById(id)); }
 }
