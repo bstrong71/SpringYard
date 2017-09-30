@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>All Customers</title>
+</head>
+<body>
+    <h1>All Customers</h1>
+    <hr/>
+    <br/>
+    <a href="/">Home</a>
+    <a href="/add_customer">Add Customer</a>
+    <br/>
+    <div>
+    <th:block th:each="customer : ${customers}">
+        <p th:text="${customer.id}"></p>
+    </th:block>
+    </div>
+</body>
+</html>
