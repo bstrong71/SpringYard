@@ -13,7 +13,7 @@
     <br/>
     <div>
     <th:block th:each="customer : ${customers}">
-        <p th:text="${customer.id}"></p>
+        <a th:text="${customer.id}" th:href="@{|/view_customer/${customer.id}|}"></a>
     </th:block>
     </div>
 </body>
