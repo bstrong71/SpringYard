@@ -12,7 +12,31 @@
     <a href="/all_customer">All Customers</a>
     <br/>
     <div>
-        
+        <form action="/add_customer" method="post">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input name="firstName"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input name="lastName"/></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input phone="phone"/></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input email="email"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 </html>

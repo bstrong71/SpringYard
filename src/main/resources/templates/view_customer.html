@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>View Customer</title>
+</head>
+<body>
+    <h1>View Customer</h1>
+    <hr/>
+    <br/>
+    <a href="/">Home</a>
+    <a href="/all_customers">Back to All Customers</a>
+    <br/>
+    <div>
+        <p>First Name: <span th:text="${customer.firstName}"></span></p>
+        <br/>
+        <p>Last Name: <span th:text="${customer.lastName}"></span></p>
+        <br/>
+        <p>Phone: <span th:text="${customer.phone}"></span></p>
+        <br/>
+        <p>Email: <span th:text="${customer.email}"></span></p>
+    </div>
+</body>
+</html>
