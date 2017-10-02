@@ -11,28 +11,30 @@
     <a href="/">Home</a>
     <a href="/all_customer">All Customers</a>
     <br/>
+    <hr/>
+    <br/>
     <div>
         <form action="/add_customer" method="post">
             <table>
                 <tr>
                     <td>First Name:</td>
-                    <td><input name="firstName"/></td>
+                    <td><input type="text" name="firstName" value="" placeholder="First Name"/></td>
                 </tr>
                 <tr>
                     <td>Last Name:</td>
-                    <td><input name="lastName"/></td>
+                    <td><input type="text" name="lastName" value="" placeholder="Last Name"/></td>
                 </tr>
                 <tr>
                     <td>Phone:</td>
-                    <td><input phone="phone"/></td>
+                    <td><input type="text" name="phone" value="" placeholder="Phone"/></td>
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><input email="email"/></td>
+                    <td><input type="text" name="email" value="" placeholder="Email"/></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </td>
                 </tr>
             </table>

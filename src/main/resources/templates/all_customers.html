@@ -11,9 +11,11 @@
     <a href="/">Home</a>
     <a href="/add_customer">Add Customer</a>
     <br/>
+    <hr/>
+    <br/>
     <div>
     <th:block th:each="customer : ${customers}">
-        <a th:text="${customer.id}" th:href="@{|/view_customer/${customer.id}|}"></a>
+        <a th:text="${customer.id}" th:href="@{|/view_customer/${customer.id}|}"></a><br/>
     </th:block>
     </div>
 </body>
