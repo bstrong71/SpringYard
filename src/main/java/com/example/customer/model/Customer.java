@@ -1,7 +1,13 @@
 package com.example.customer.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "customer")
 public class Customer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String firstName;
     private String lastName;
@@ -11,6 +17,8 @@ public class Customer {
     public Customer() {
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -19,6 +27,7 @@ public class Customer {
         this.id = id;
     }
 
+    @Column(name = "firstname")
     public String getFirstName() {
         return firstName;
     }
@@ -27,6 +36,7 @@ public class Customer {
         this.firstName = firstName;
     }
 
+    @Column(name = "lastname")
     public String getLastName() {
         return lastName;
     }
@@ -50,4 +60,6 @@ public class Customer {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
